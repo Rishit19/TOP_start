@@ -1,18 +1,28 @@
 body{
     background-color: #202937;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #header{
     color: whitesmoke;
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: row;
 }
 
 #sec{
     background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
 }
 
 #third{
     background-color: #E6E7EB;
+    display: flex;
+    flex-direction: row;
 }
 
 #fourth{
