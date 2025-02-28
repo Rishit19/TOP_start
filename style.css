@@ -1,0 +1,28 @@
+body{
+    background-color: #202937;
+}
+
+#header{
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+
+#sec{
+    background-color: aliceblue;
+}
+
+#third{
+    background-color: #E6E7EB;
+}
+
+#fourth{
+    background-color: whitesmoke;
+}
+
+#fou_inside{
+    background-color: #3C83F6;
+}
+
+#footer{
+    color: whitesmoke;
+}
