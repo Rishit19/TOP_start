@@ -5,6 +5,21 @@ body{
     align-items: center;
     justify-content: center;
 }
+html, body {
+    height: 100vh; /* Ensures full height for the flex container */
+}
+body > div{
+    flex: 1;;
+}
+
+#f_content, #f_img {
+    flex: 1; /* Ensures equal space */
+}
+
+#f_img img {
+    max-width: 100%; /* Prevents overflow */
+    height: auto; /* Maintains aspect ratio */
+}
 
 #header{
     color: whitesmoke;
