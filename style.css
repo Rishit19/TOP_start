@@ -1,53 +1,233 @@
-body{
+body {
     background-color: #202937;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
-html, body {
+/* html, body {
     height: 100vh; /* Ensures full height for the flex container */
-}
-body > div{
+/* } */ 
+/* body > div{
     flex: 1;;
-}
+} */
 
-#f_content, #f_img {
-    flex: 1; /* Ensures equal space */
-}
 
-#f_img img {
-    max-width: 100%; /* Prevents overflow */
-    height: auto; /* Maintains aspect ratio */
-}
-
-#header{
+#header {
     color: whitesmoke;
     font-family: 'Roboto', sans-serif;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between; /* Ensures the logo and links are spaced out */
+    align-items: center; /* Aligns items vertically */
+    padding: 10px 20px; /* Adds some space */
+    background-color: #202937;
+    width: 100%; /* Ensures full width */
 }
 
-#sec{
-    background-color: aliceblue;
+#logo {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#head_content {
     display: flex;
-    flex-direction: row;
+    gap: 20px; /* Adds spacing between links */
+    padding: 10px;
 }
 
-#third{
+#head_content a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#first {
+    display: flex;
+    align-items: center; /* Centers content vertically */
+    justify-content: space-between; /* Ensures spacing */
+    padding: 40px 80px;
+    color: aliceblue;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+#f_container {
+    display: flex;
+    flex-direction: column; /* Stacks items */
+    flex: 1;
+    max-width: 50%; /* Prevents text from stretching too much */
+}
+
+#f_container h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#f_container p {
+    font-size: 1rem;
+    color: #b0b0b0; /* Lower contrast */
+    margin-bottom: 20px;
+}
+
+.b {
+    padding: 10px 20px;
+    background-color: #3C83F6;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content; /* Ensures button is only as wide as content */
+}
+
+#f_img {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.placeholder {
+    background-color: gray;
+    color: white;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sec {
+    display: flex;
+    flex-direction: column; /* Ensures the title is above the squares */
+    align-items: center; /* Centers content horizontally */
+    padding: 40px;
+    background-color: aliceblue;
+    color: #202937;
+    text-align: center;
+    width: 100%;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.info_container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Spacing between boxes */
+    max-width: 1200px;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+/* Individual box + text */
+.comb_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centering the text under the square */
+    text-align: center;
+    width: 150px; /* Controls box width */
+    padding: 10px;
+}
+
+.sq_container {
+    width: 120px;
+    height: 120px;
+    border: 3px solid #3C83F6; /* Border color */
+    border-radius: 10px;
+    background-color: white;
+}
+
+/* Text under square */
+.comb_container p {
+    margin-top: 10px;
+    color: #202937;
+    font-size: 16px;
+}
+
+#third {
     background-color: #E6E7EB;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* padding: 40px 20px; */
+    /* max-width: 900px; */
+    /* margin: 40px auto; */
+    padding: 40px;
+    width: 100%;
+    /* border-radius: 10px; */
 }
 
-#fourth{
-    background-color: whitesmoke;
+#third p {
+    font-family: cursive;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-#fou_inside{
+
+#third h5 {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#fourth {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+#fou_box {
     background-color: #3C83F6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures button is on the right */
+    max-width: 900px; /* Keeps CTA at good width */
+    width: 100%;
+    padding: 30px 40px;
+    border-radius: 10px;
+    text-align: left;
+    color: white;
 }
 
-#footer{
+#content {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px; /* Keeps text from spreading */
+}
+
+#fou_box h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#fou_box p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.b2 {
+    padding: 12px 24px;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#footer {
     color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    background-color: #202937;
 }
